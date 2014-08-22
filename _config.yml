@@ -1,0 +1,20 @@
+# Site settings
+title: ClouDesire
+email: dev@cloudesire.com
+description: "Official documentation for ClouDesire and ThreeHops"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://docs.cloudesire.com" # the base hostname & protocol for your site
+twitter_username: cloudesire
+github_username:  cloudesire
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+
+languages:
+  - code: en
+    title: Articles
+  - code: it
+    title: Articoli
