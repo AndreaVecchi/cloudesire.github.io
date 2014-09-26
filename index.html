@@ -8,7 +8,10 @@ layout: default
     <h1 class="page-heading">{{ lang.title }}</h1>
 
       {% for page in site.pages %}
-      <ul class="post-list">
+
+        {% if forloop.first %}
+        <ul class="post-list">
+        {% endif %}
 
         {% if page.title %}
           {% if page.language == lang.code %}
@@ -19,9 +22,13 @@ layout: default
           </li>
           {% endif %}
         {% endif %}
+
+        {% if forloop.last %}
+        </ul>
+        {% endif %}
+
       {% endfor %}
 
-      </ul>
     {% endfor %}
 
 
