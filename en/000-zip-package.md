@@ -1,7 +1,6 @@
 ---
 layout: page
 title: How-to package applications in zip
-link: Applications zip
 language: en
 permalink: /en/application-zip-creation.html
 ---
@@ -89,14 +88,3 @@ For example, if you use pg_dump, you would run:
 ```
 pg_dump -O --inserts --column-inserts my_database_name > V1__init.sql
 ```
-
-## Demo applications
-
-Here you can find a selection of ready-to-use **demo apps**,  written in several application stacks:
-
-  * [[http://www.cloudesire.com/demo_apps/django-postgresql-app.zip|django-postgresql-app.zip]] (Django + PostgreSQL)
-  * [[http://www.cloudesire.com/demo_apps/java-mysql-app.zip|java-mysql-app.zip]] (Java6 + MySQL)
-  * [[http://www.cloudesire.com/demo_apps/rails-postgresql-app.zip|rails-postgresql-app.zip]] (Ruby on Rails + PostgreSQL)
-  * [[http://www.cloudesire.com/demo_apps/php-mysql-app.zip|php-mysql-app.zip]] (PHP5 + MySQL)
-  * [[http://www.cloudesire.com/demo_apps/php-mongodb-app.zip|php-mongodb-app.zip]] (PHP5 + MongoDB)
-  * [[http://www.cloudesire.com/demo_apps/nodejs-mongodb-app.zip|nodejs-mongodb-app.zip]] (NodeJS + MongoDB)
