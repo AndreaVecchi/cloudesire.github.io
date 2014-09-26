@@ -6,6 +6,15 @@ language: en
 permalink: /en/supported-cloud-providers.html
 ---
 
-This is a guide to the supported Cloud Providers:
+The currently supported Cloud Providers are:
 
-coming soon!
+|Cloud Provider Name  | PHP | Java | Rails | Django | NodeJS | .NET |
+|---------------------|-----|------|-------|--------|--------|------|
+|Amazon AWS           |  ☑  |  ☑  |   ☑   |   ☑   |    ☑   |  ☑  |
+|Enter the Cloud      |  ☑  |  ☑  |   ☑   |   ☑   |    ☑   |  ☒  |
+|Rackspace            |  ☑  |  ☑  |   ☑   |   ☑   |    ☑   |  ☒  |
+|HPCloud              |  ☑  |  ☑  |   ☑   |   ☑   |    ☑   |  ☒  |
+|IBM Softlayer        |  ☑  |  ☑  |   ☑   |   ☑   |    ☑   |  ☒  |
+|Joyent               |  ☑  |  ☑  |   ☑   |   ☑   |    ☑   |  ☒  |
+|Microsoft Azure      |  ☑  |  ☑  |   ☑   |   ☑   |    ☑   |  ☒  |
+|Digital Ocean        |  ☑  |  ☑  |   ☑   |   ☑   |    ☑   |  ☒  |
