@@ -1,5 +1,5 @@
 # Site settings
-title: ClouDesire
+title: ClouDesire Knowledge-Base
 email: dev@cloudesire.com
 description: "Official documentation for ClouDesire and ThreeHops"
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -15,6 +15,6 @@ kramdown:
 
 languages:
   - code: en
-    title: Articles
+    title: Articles index
   - code: it
-    title: Articoli
+    title: Indice Articoli

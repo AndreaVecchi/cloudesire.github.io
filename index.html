@@ -4,13 +4,12 @@ layout: default
 
 <div class="home">
 
-
-
-
     {% for lang in site.languages %}
     <h1 class="page-heading">{{ lang.title }}</h1>
+
       {% for page in site.pages %}
       <ul class="post-list">
+
         {% if page.title %}
           {% if page.language == lang.code %}
           <li>
@@ -21,6 +20,7 @@ layout: default
           {% endif %}
         {% endif %}
       {% endfor %}
+
       </ul>
     {% endfor %}
 
