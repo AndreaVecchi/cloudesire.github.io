@@ -16,5 +16,3 @@ kramdown:
 languages:
   - code: en
     title: Articles index
-  - code: it
-    title: Indice Articoli
