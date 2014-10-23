@@ -12,9 +12,13 @@ To be able to deploy automatically an Application, a ZIP package is required, co
 
 The ZIP package structure must meet the following general criteria:
 
-  * A folder named *sql* when using MySQL and PostgresSQL;
+  * A folder named *sql* when using MySQL and PostgreSQL;
   * A folder named *mongodb* when using MongoDB;
   * A folder with the web application’s code, depending on the language and/or stack used.
+
+## Application Stacks-specific requirements
+
+We support several application stack, but every one has specific things that should be kept in consideration.
 
 ### PHP applications
 
@@ -23,7 +27,7 @@ The ZIP should contains a folder named **php-app** containing the application so
   * CLOUDESIRE_DB_USER: username to connect to the database;
   * CLOUDESIRE_DB_PASS: password to connect to the database;
   * CLOUDESIRE_DB_NAME: name of the available database;
-  * CLOUDESIRE_DB_HOST: currently map to the database, running on localhost.
+  * CLOUDESIRE_DB_HOST: currently map to the host database, running on localhost.
 
 In the case that the application runs on MongoDB, only CLOUDESIRE_DB_NAME will be needed, and authentication will be turned off as per default configuration.
 
@@ -76,15 +80,35 @@ The ZIP should contains a folder named **java-app** containing the web applicati
 
 The ZIP should contains a folder named **nodejs-app** containing the application code. The application is required to use the NODE_PORT environment variable when choosing on which port the application should listen to (using process.env.NODE_PORT). It is assumed that a node.js application is built on *express* or a compatible framework, and uses *npm* to handle dependencies.
 
-### MongoDB databases
+## Database-specific requirements
 
-MongoDB will run on the default port with no authentication and the database name is preserved on the binary dump, so no further configuration should be necessary on the application.
+An application could automatically initialize the database schema at the first run, otherwise it's possible to insert a database dump into the zip.
+We adopted the [flyway](http://flywaydb.org/) database migration tool, that supports schema versioning by simply creating multiple .sql file starting with the version number. For example:
 
-### PostgreSQL database
+```
+V1__initial_schema.sql
+V2__added_field.sql
+V3__added_index.sql
+```
+
+For more information, refer directly to the [flyway documentation](http://flywaydb.org/documentation/migration/sql.html).
+
+### MySQL 5.x database
+
+The script should be in the standard .sql format, e.g.: generated via *mysqldump* tool. It should not contains any administrative command, like CREATE DATABASE or GRANT PRIVILEGES.
+
+### PostgreSQL 9.x database
 
 Only plain-text SQL dumps are supported. Due to the limitations of this format in regards to PostgreSQL dumps must be made so that object ownership is not preserved, and data is loaded via INSERT rather than COPY.
 
 For example, if you use pg_dump, you would run:
+
 ```
 pg_dump -O --inserts --column-inserts my_database_name > V1__init.sql
 ```
+
+### MongoDB 2.x database
+
+MongoDB will run on the default port with no authentication and the database name is preserved on the binary dump, so no further configuration should be necessary on the application.
+
+A database dump should be gathered with *mongodump* utility. At the first run, it will be imported using mongorestore utility.
