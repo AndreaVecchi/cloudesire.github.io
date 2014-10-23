@@ -112,3 +112,16 @@ pg_dump -O --inserts --column-inserts my_database_name > V1__init.sql
 MongoDB will run on the default port with no authentication and the database name is preserved on the binary dump, so no further configuration should be necessary on the application.
 
 A database dump should be gathered with *mongodump* utility. At the first run, it will be imported using mongorestore utility.
+
+## After-deploy script
+
+It's possible to automatically execute custom commands on the last stage of the deploy, just in case you need some special hook before the application is really ready to be used.
+
+Just put in the application folder a file named cloudesire.build, starting with a standard [shebang](http://en.wikipedia.org/wiki/Shebang_(Unix)), e.g.:
+
+```
+#!/bin/bash
+echo 'Build completed' > log.txt
+```
+
+This file will be executed at the end of the deploy process. Keep in mind that if the script return a non-zero value, it is considered a fail, and the deploy attempt will fail.
