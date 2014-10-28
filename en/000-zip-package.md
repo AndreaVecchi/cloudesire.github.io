@@ -7,14 +7,14 @@ permalink: /en/application-zip-creation.html
 
 To be able to deploy automatically an Application, a ZIP package is required, containing:
 
-  * the web application’s source code or packaged artifacts (where applies);
-  * the database data that is required for the application to be fully functional - without manual adjustements.
+  * the web application’s source code or the packaged artifacts;
+  * the database data that is required for the application to be fully functional - without any manual adjustments.
 
 The ZIP package structure must meet the following general criteria:
 
-  * A folder named *sql* when using MySQL and PostgreSQL;
-  * A folder named *mongodb* when using MongoDB;
-  * A folder with the web application’s code, depending on the language and/or stack used.
+  * A folder named *sql* if using MySQL or PostgreSQL;
+  * A folder named *mongodb* if using MongoDB;
+  * A folder with the web application’s code, depending on the language and/or stack used (keep on reading).
 
 ## Application Stacks-specific requirements
 
@@ -22,7 +22,7 @@ We support several application stack, but every one has specific things that sho
 
 ### PHP applications
 
-The ZIP should contains a folder named **php-app** containing the application source code, where you have to use the following environment variables containing database connection information:
+The ZIP should contains a folder named **php-app** containing the application source code, and you have to use the following environment variables containing database connection information:
 
   * CLOUDESIRE_DB_USER: username to connect to the database;
   * CLOUDESIRE_DB_PASS: password to connect to the database;
@@ -30,6 +30,14 @@ The ZIP should contains a folder named **php-app** containing the application so
   * CLOUDESIRE_DB_HOST: currently map to the host database, running on localhost.
 
 In the case that the application runs on MongoDB, only CLOUDESIRE_DB_NAME will be needed, and authentication will be turned off as per default configuration.
+
+Example of a generic config.php:
+
+```
+define('db_name', getenv('CLOUDESIRE_DB_NAME'));
+define('db_username', getenv('CLOUDESIRE_DB_USER'));
+define('db_password', getenv('CLOUDESIRE_DB_PASS'));
+```
 
 ### Rails applications
 
@@ -78,7 +86,7 @@ The ZIP should contains a folder named **java-app** containing the web applicati
 
 ### NodeJS applications
 
-The ZIP should contains a folder named **nodejs-app** containing the application code. The application is required to use the NODE_PORT environment variable when choosing on which port the application should listen to (using process.env.NODE_PORT). It is assumed that a node.js application is built on *express* or a compatible framework, and uses *npm* to handle dependencies.
+The ZIP should contains a folder named **nodejs-app** containing the application code. The application is required to use the NODE_PORT environment variable when choosing on which port the application should listen to (using *process.env.NODE_PORT*). It is assumed that a node.js application is built on *express* or a compatible framework, and uses *npm* to handle dependencies.
 
 ## Database-specific requirements
 
