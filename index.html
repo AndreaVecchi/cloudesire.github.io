@@ -4,33 +4,17 @@ layout: default
 
 <div class="home">
 
-    {% for lang in site.languages %}
-    <h1 class="page-heading">{{ lang.title }}</h1>
-
-      {% for page in site.pages %}
-
-        {% if forloop.first %}
-        <ul class="post-list">
-        {% endif %}
-
-        {% if page.title %}
-          {% if page.language == lang.code %}
-          <li>
-            <h2>
-              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            </h2>
-          </li>
-          {% endif %}
-        {% endif %}
-
-        {% if forloop.last %}
-        </ul>
-        {% endif %}
-
-      {% endfor %}
-
-    {% endfor %}
-
+  {% for page in site.pages %}
+  <ul class="post-list">
+    {% if page.front %}
+    <li>
+      <h2>
+        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </h2>
+    </li>
+    {% endif %}
+  </ul>
+  {% endfor %}
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

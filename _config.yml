@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://docs.cloudesire.com" # the base hostname & protocol for your site
 twitter_username: cloudesire
 github_username:  cloudesire
+highlighter: pygments
 
 # Build settings
 markdown: kramdown

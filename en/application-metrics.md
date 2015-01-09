@@ -1,8 +1,8 @@
 ---
 layout: page
-title: How to setup and manage application metrics
+title: How to support application metrics
 language: en
-permalink: /en/application-metrics.html
+front: yes
 ---
 
 To be able to successfully use application metrics, your application should expose an unique URL for each application metric, reporting the value for that metric.

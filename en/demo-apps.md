@@ -1,8 +1,8 @@
 ---
 layout: page
-title: List of demo apps
+title: Download demo applications
 language: en
-permalink: /en/demo-apps.html
+front: yes
 ---
 
 Here you can find a selection of ready-to-use **demo apps**,  written in several application stacks:
