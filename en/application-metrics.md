@@ -1,8 +1,8 @@
 ---
 layout: page
-title: How to support application metrics
+title: Application metrics
 language: en
-front: yes
+category: articles
 ---
 
 To be able to successfully use application metrics, your application should expose an unique URL for each application metric, reporting the value for that metric.

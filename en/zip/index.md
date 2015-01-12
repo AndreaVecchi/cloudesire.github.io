@@ -2,7 +2,7 @@
 layout: page
 title: ZIP packaging of applications
 language: en
-front: yes
+category: articles
 ---
 
 To be able to deploy automatically an Application, a ZIP package is required, containing:

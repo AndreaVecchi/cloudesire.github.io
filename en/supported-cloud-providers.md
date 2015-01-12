@@ -2,7 +2,7 @@
 layout: page
 title: Supported Cloud Providers (IaaS)
 language: en
-front: yes
+category: articles
 ---
 
 The currently supported Cloud Providers are:

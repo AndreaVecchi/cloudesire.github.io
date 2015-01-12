@@ -3,7 +3,7 @@ title: ClouDesire
 subtitle: Knowledge-Base
 email: dev@cloudesire.com
 description: "Official documentation for ClouDesire and ThreeHops"
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: ""
 url: "http://docs.cloudesire.com" # the base hostname & protocol for your site
 twitter_username: cloudesire
 github_username:  cloudesire
@@ -15,9 +15,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-languages:
-  - code: en
-    title: Articles index
-
 gems:
-  - jekyll-sitemap
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap

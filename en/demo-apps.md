@@ -2,7 +2,7 @@
 layout: page
 title: Download demo applications
 language: en
-front: yes
+category: articles
 ---
 
 Here you can find a selection of ready-to-use **demo apps**,  written in several application stacks:
