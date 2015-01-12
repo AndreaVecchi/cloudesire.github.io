@@ -1,0 +1,15 @@
+.breadcrumbs {
+  margin-left: 0;
+  li {
+    display: inline;
+    list-style: none;
+    &:after {
+      content: " » ";
+    }
+    &.active {
+      &:after {
+        content: "";
+      }
+    }
+  }
+}
