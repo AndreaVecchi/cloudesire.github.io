@@ -8,7 +8,7 @@ url: "http://docs.cloudesire.com" # the base hostname & protocol for your site
 twitter_username: cloudesire
 github_username:  cloudesire
 highlighter: pygments
-exclude: [ 'jenkins.sh', 'Gemfile*' ]
+exclude: [ 'jenkins.sh', 'Gemfile*', 'jekyll-cloudfiles-upload' ]
 
 # Build settings
 markdown: kramdown
