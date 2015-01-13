@@ -1,0 +1,3 @@
+[submodule "jekyll-cloudfiles-upload"]
+	path = jekyll-cloudfiles-upload
+	url = https://github.com/rodhilton/jekyll-cloudfiles-upload.git
