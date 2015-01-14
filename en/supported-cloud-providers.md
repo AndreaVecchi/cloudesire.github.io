@@ -17,3 +17,4 @@ The currently supported Cloud Providers are:
 |Joyent               |  ☑  |  ☒  ||
 |Microsoft Azure      |  ☑  |  ☒  ||
 |Digital Ocean        |  ☑  |  ☒  |No data disk available|
+{: class="table"}
