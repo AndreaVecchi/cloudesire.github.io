@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ZIP packaging of applications
+title: Application packaging guidelines
 language: en
 category: articles
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Download demo applications
+title: Example applications archive
 language: en
 category: articles
 ---
