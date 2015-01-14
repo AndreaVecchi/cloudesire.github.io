@@ -16,6 +16,8 @@ markdown: kramdown
 kramdown:
   input: GFM
 
+highlighter: rouge
+
 gems:
 - jemoji
 - jekyll-sitemap
