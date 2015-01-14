@@ -4,4 +4,4 @@ title: KB Articles
 front: yes
 ---
 
-This section contains all the english articles.
+Hi software vendor, this section is dedicated to you.

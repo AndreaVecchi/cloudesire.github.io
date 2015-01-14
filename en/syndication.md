@@ -2,7 +2,6 @@
 layout: page
 title: Syndicated Applications
 language: en
-category: articles
 ---
 
 A syndicated application is an application that is directly erogated by the software vendor, and not hosted on the platform itself.
