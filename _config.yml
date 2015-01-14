@@ -7,6 +7,7 @@ baseurl: ""
 url: "http://docs.cloudesire.com" # the base hostname & protocol for your site
 twitter_username: cloudesire
 github_username:  cloudesire
+github_edit_link: https://github.com/ClouDesire/cloudesire.github.io/edit/master
 highlighter: pygments
 exclude: [ 'jenkins.sh', 'Gemfile*', 'jekyll-cloudfiles-upload' ]
 
