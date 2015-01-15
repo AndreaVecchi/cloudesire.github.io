@@ -58,7 +58,7 @@ User-Agent: HTTPie/0.7.2
 
 When the token will expire you will get a ```401``` error respose and you should request a new one.
 
-If you need a token that doesn't expire, use the ```expire``` parameter:
+If you need a token that doesn't expire, set the ```expire``` parameter:
 
 {% highlight http %}
 GET /api/login?expire=false HTTP/1.1
