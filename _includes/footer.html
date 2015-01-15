@@ -52,7 +52,7 @@
       </div>
 
       <div class="footer-col  footer-col-3">
-        <small>Built on: {{ site.time | date_to_xmlschema }}</small>
+        <small>Built: {{ site.time | date_to_rfc822 }}</small>
         <p class="text">{{ site.description }}</p>
       </div>
     </div>
