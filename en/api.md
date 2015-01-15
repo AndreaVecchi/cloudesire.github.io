@@ -51,7 +51,7 @@ Then, just stop using Basic Auth and start setting two additional headers for ev
 {% highlight http %}
 GET /api/login HTTP/1.1
 CMW-Auth-Token: hrNSv0ZPZVVeDkf8Pta2RLmkyVqEcKMfzTdCUi8voLQMOUcHUMaqSyylhVAVZ8rZSkl4lsNiWemC6l6WSnqnILhXYQcrPIZm
-CMW-Auth-User: admin
+CMW-Auth-User: vendor
 Host: staging.cloudesire.com
 User-Agent: HTTPie/0.7.2
 {% endhighlight %}
@@ -91,7 +91,7 @@ Now that you know where and how to make an authenticated request, start fetching
 {% highlight http %}
 GET /api/user/me HTTP/1.1
 CMW-Auth-Token: hrNSv0ZPZVVeDkf8Pta2RLmkyVqEcKMfzTdCUi8voLQMOUcHUMaqSyylhVAVZ8rZSkl4lsNiWemC6l6WSnqnILhXYQcrPIZm
-CMW-Auth-User: admin
+CMW-Auth-User: vendor
 Host: staging.cloudesire.com
 User-Agent: HTTPie/0.7.2
 {% endhighlight %}
@@ -123,12 +123,12 @@ Date: Tue, 13 Jan 2015 15:05:52 GMT
     "enabled": true,
     "environment": "cloudesire",
     "id": 3,
-    "name": "Admin",
+    "name": "Demo Vendor",
     "newbie": false,
     "phoneNumber": "0123456789",
     "self": "user/3",
-    "userName": "admin",
-    "userRole": "ROLE_ADMIN"
+    "userName": "vendor",
+    "userRole": "ROLE_VENDOR"
 }
 {% endhighlight %}
 
