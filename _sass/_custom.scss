@@ -1,10 +1,31 @@
+body {
+  font-family: $base-font-family;
+}
+a {
+  color: #337ab7;
+  &:visited {
+    color: #337ab7;
+  }
+  &:hover {
+    color: #337ab7;
+    text-decoration: underline;
+  }
+}
+
 a[href^="http"] {
   background: url(/images/external.png) center right no-repeat;
   padding-right: 13px;
 }
 
-a{
-  &:visited {
-    color: #337ab7;
+.social-media-list {
+  a {
+    background: none;
+  }
+}
+
+.site-title {
+  font-size: 48px;
+  a:hover {
+    text-decoration: none;
   }
 }
