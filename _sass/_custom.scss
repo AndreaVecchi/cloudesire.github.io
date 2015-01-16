@@ -1,0 +1,10 @@
+a[href^="http"] {
+  background: url(/images/external.png) center right no-repeat;
+  padding-right: 13px;
+}
+
+a{
+  &:visited {
+    color: #337ab7;
+  }
+}
