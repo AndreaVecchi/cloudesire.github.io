@@ -21,3 +21,10 @@ The currently supported Cloud Providers are:
 | Rackspace           |      ☑       |       ☒       | Data disk minimun size 100 GB      |
 |---------------------+--------------+----------------+------------------------------------|
 {: class="table"}
+
+## Java Clients for Cloud Providers
+
+* Most cloud providers are supported via [jclouds](https://jclouds.apache.org/) API
+* [Azure client](https://github.com/ClouDesire/azure-api-client)
+* [Joyent client](https://github.com/ClouDesire/joyent-api-client)
+* [Google Compute Engine client](https://github.com/ClouDesire/gce-api-client)
