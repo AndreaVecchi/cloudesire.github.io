@@ -183,7 +183,7 @@ PATCH /api/subscription/18 HTTP/1.1
 Content-Type: application/json; charset=utf-8
 
 {
-  "deploymentStatus": "DEPLOYED",
+  "status": "DEPLOYED",
   "syndicatedEndpoints": [ "http://vendor.example.org" ],
   "endUserIstructions": "Use your email as login and password jei9je9y"
 }
