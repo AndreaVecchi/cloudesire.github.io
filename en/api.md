@@ -7,6 +7,10 @@ category: articles
 
 The ClouDesire API is based on **REST** principles and uses **JSON** as data exchange format.
 
+## Client
+
+At this time we don't have official API client library, but you can take a look at [these suggestions](/en/).
+
 ## URI format
 
 To access resources, you need to use an URI with the format:
